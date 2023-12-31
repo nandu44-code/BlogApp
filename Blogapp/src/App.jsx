@@ -10,9 +10,9 @@ function App() {
   return (
    <Router>
     <nav>
-      <Link to='/'>Home</Link>
-      <Link to='/createpost'>create post</Link>
-      <Link to='/login'>Login</Link>
+      <Link className='nav-item' to='/'>Home</Link>
+      <Link className='nav-item' to='/createpost'>Post</Link>
+      <Link className='nav-item' to='/login'>Login</Link>
     </nav>
     <Routes>
       <Route path='/' element={<Home/>}/>
