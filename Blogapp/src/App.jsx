@@ -7,17 +7,47 @@ import Login from './pages/login';
 
 function App() {
 
+  const [isAuth, setIsAuth] = useState(false)
   return (
    <Router>
     <nav>
-      <Link className='nav-item' to='/'>Home</Link>
-      <Link className='nav-item' to='/createpost'>Post</Link>
-      <Link className='nav-item' to='/login'>Login</Link>
+      <blog className='blog'>BLOG APP</blog>
+      
+        <Link className='nav-item' to='/'>
+        <nav-items>
+          Home
+        </nav-items>
+          </Link>
+
+      
+        <Link className='nav-item' to='/createpost'>
+        <nav-items>
+          Post
+          </nav-items>
+          </Link>
+
+      
+        {isAuth ? <Link className='nav-item' to='/login'>
+        <nav-items>
+          Login
+        </nav-items>
+        </Link>
+        :
+        <Link className='nav-item' to=''>
+        <nav-items>
+         Logout
+        </nav-items>
+        </Link>
+        }
+    
+
+      
+    
     </nav>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/createpost' element={<CreatePost/>}/>
-      <Route path='/login' element={<Login/>}/>
+      <Route path='/login' element={<Login setIsAuth={setIsAuth}/>}/>
 
     </Routes>
    </Router>
