@@ -4,10 +4,21 @@ import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
 import Home from './pages/Home';
 import CreatePost from './pages/createPost';
 import Login from './pages/login';
-
+import { signOut } from 'firebase/auth';
+import {auth} from './firebaseConfig'
 function App() {
 
+
   const [isAuth, setIsAuth] = useState(false)
+  const userSignOUt = () =>{
+    signOut(auth).then(() =>{
+      localStorage.clear();
+      setIsAuth(false);
+      window.location.pathname = '/login';
+      console.log(isAuth)
+    })
+  }
+
   return (
    <Router>
     <nav>
@@ -33,7 +44,7 @@ function App() {
         </nav-items>
         </Link>
         :
-        <Link className='nav-item' to=''>
+        <Link className='nav-item' onClick={userSignOUt}>
         <nav-items>
          Logout
         </nav-items>
