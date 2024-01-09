@@ -13,7 +13,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: rgb(255, 0, 0);
+  color: rgb(128, 97, 97);
   text-decoration: none;
 }
 .blog {
@@ -31,28 +31,29 @@ nav-items{
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color:rgba(26, 48, 73, 0.884);
+  /* background-color:rgba(26, 48, 73, 0.884); */
   margin-left:50px;
   border-radius: 20px;
   cursor: pointer;
+  color: black;
   
 }
 nav-items:hover{
 transform: scale(1.2);
 border-bottom: 25px;
-
-background-color:rgba(0, 24, 85, 0.884) ;
+/* background-color:rgba(255, 253, 253, 0.884) ; */
 padding-top: 12px;
 padding-bottom: 12px;
 padding-left: 22px;
 padding-right: 22px;
 border-radius: 10px;
+color: white;
 
 }
 .nav-item{
 
   font-size: large;
-  color: rgb(243, 243, 243);
+  color: rgb(108, 105, 105);
   margin-right: 50px;
   margin-left:50px;
 }
@@ -144,7 +145,7 @@ textarea {
   padding: 5px 16px 12px 42px;
   border: none;
   border-radius: 3px;
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0px 3px rgba(27, 27, 27, 0.04), 0 3px 1px rgba(4, 4, 4, 0.25);
   color: #757575;
   font-size: 25px;
   font-weight: 500;

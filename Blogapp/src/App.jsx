@@ -8,7 +8,6 @@ import { signOut } from 'firebase/auth';
 import {auth} from './firebaseConfig'
 function App() {
 
-
   const [isAuth, setIsAuth] = useState(false)
   const userSignOUt = () =>{
     signOut(auth).then(() =>{
@@ -38,18 +37,17 @@ function App() {
           </Link>
 
       
-        {isAuth ? <Link className='nav-item' to='/login'>
-        <nav-items>
-          Login
-        </nav-items>
-        </Link>
-        :
-        <Link className='nav-item' onClick={userSignOUt}>
-        <nav-items>
-         Logout
-        </nav-items>
-        </Link>
-        }
+            {isAuth ? (
+    <Link className='nav-item' onClick={userSignOUt}>
+      <nav-items> Logout </nav-items>
+    </Link>
+  ) : (
+    <Link className='nav-item' to='/login'>
+      <nav-items> Login </nav-items>
+    </Link>
+  )}
+
+
     
 
       
