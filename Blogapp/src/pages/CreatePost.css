@@ -3,12 +3,13 @@
     display: flex;
     justify-content: center;
     align-items:center;
+    flex-direction: column;
 
 }
 
 .create-post{
 
-    background-color: rgba(55, 55, 55, 0.27);
+    background-color: rgba(209, 209, 209, 0.27);
     display: flex;
     justify-content: center;
     align-items:center;
@@ -27,7 +28,7 @@
 
 .create-post:hover{
 
-    background-color: rgba(11, 9, 9, 0.785);
+    background-color: rgba(192, 192, 192, 0.867);
     display: flex;
     justify-content: center;
     align-items:center;
@@ -40,10 +41,75 @@
     padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    color: white;
-    transform: scale(1.08);
+    color: rgb(0, 0, 0);
+    
 }
 
 .icon{
     margin-left: 20px;
 }
+.your-posts{
+
+    margin-top: 100px;
+    
+}
+
+.inputGp{
+
+    border-color: black;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    width: 400px;
+    height: 60px;
+    margin-bottom: 60px;
+}
+
+.inputGp label{
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+
+.inputGp input{
+    margin-bottom: 10px;
+    margin-right:4px;
+    margin-top: 7px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    height: 25px;
+    width: 300px;
+    
+}
+
+textarea{
+    width: 500px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.create-button{
+    background-color: rgb(25, 25, 25);
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    margin: 50px;
+    color: white;
+    border-radius: 20px;
+    font-size: medium;
+}
+
+.create-button:hover{
+    background-color: rgb(199, 198, 198);
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    margin: 50px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: medium;
+}
+
